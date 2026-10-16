@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* login box is small and in center */
+.login {
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+/* booking box covers the screen with some margin */
+.booking {
+  margin: 15px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 26px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#date {
+  width: auto;
+  margin-bottom: 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login button {
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: default;
+}
+
+.cancel {
+  background-color: red;
+}
+
+.cancel:hover {
+  background-color: darkred;
+}
+
+#error {
+  color: red;
+}
+
+.test-login {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff8dc;
+  border: 1px dashed orange;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* for mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .booking {
+    margin: 10px;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  th,
+  td {
+    padding: 8px 4px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  #date {
+    width: 100%;
+    margin-top: 5px;
+  }
+}

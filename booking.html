@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Book Slot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <span>Gym Slot Booking</span>
+      <span id="welcome"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container booking">
+      <h2>Book Your Slot</h2>
+
+      <label>Select Date: </label>
+      <input type="date" id="date" onchange="showSlots()" />
+
+      <br /><br />
+
+      <table id="slotTable"></table>
+    </div>
+
+    <script src="booking.js"></script>
+  </body>
+</html>
